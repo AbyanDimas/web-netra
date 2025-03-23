@@ -45,18 +45,35 @@ const speakers = [
 
 const SpeakersSection: React.FC = () => {
   return (
-    <div className="text-center py-10 bg-gray-50">
-      <h2 className="text-2xl font-bold text-purple-700 mb-8">Speakers</h2>
+    <div className="text-center py-10">
+      {/* Judul */}
+      <h2 className="text-4xl pt-10 font-bold  mb-18">
+        Speakers
+      </h2>
+
+      {/* Daftar Speaker */}
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4 max-w-6xl mx-auto">
         {speakers.map((speaker, index) => (
-          <div key={index} className="flex flex-col items-center text-center">
+          <div
+            key={index}
+            className="flex flex-col items-center text-center"
+          >
+            {/* Gambar Speaker */}
             <img
               src={speaker.image}
               alt={speaker.name}
-              className="w-28 h-28 rounded-full object-cover shadow-lg"
+              className="w-45 h-45 rounded-full object-cover shadow-lg "
             />
-            <h3 className="mt-4 text-lg font-semibold">{speaker.name}</h3>
-            <p className="text-gray-600 text-sm">{speaker.title}</p>
+
+            {/* Nama Speaker */}
+            <h3 className="mt-4 text-lg font-semibold dark:text-white">
+              {speaker.name}
+            </h3>
+
+            {/* Jabatan Speaker */}
+            <p className="text-gray-600 dark:text-gray-300 text-sm">
+              {speaker.title}
+            </p>
           </div>
         ))}
       </div>

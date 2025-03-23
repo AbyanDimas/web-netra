@@ -1,3 +1,6 @@
+import Image from "next/image";
+import ImageProfil from "../../../../../public/images/adiwerna1.webp";
+
 const Higlight = () => {
   return (
     <div className="max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6">
@@ -9,16 +12,16 @@ const Higlight = () => {
       <div className="flex flex-col md:flex-row">
         {/* can help image */}
         <div className="mr-0 md:mr-8 mb-6 md:mb-0">
-          <img
-            className="w-1/2 md:w-full mx-auto"
-            src="https://placeholder.pics/svg/400"
-            alt="can_help_banner"
+          <Image
+            className="w-[400px] h-[400px] object-cover mx-auto rounded-xl shadow-lg shadow-blue-500" // Ukuran 400x400
+            src={ImageProfil}
+            alt="Adiwerna 1"
           />
         </div>
         {/* end can help image */}
         <div className="flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2">
           <div className="w-full sm:w-1/2 mb-4 px-2 ">
-            <div className="h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl">
+            <div className="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
               <h3 className="text-2xl font-bold text-md mb-6">
                 Dynamic Personalization:
               </h3>
@@ -30,7 +33,7 @@ const Higlight = () => {
             </div>
           </div>
           <div className="w-full sm:w-1/2 mb-4 px-2 ">
-            <div className="h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl">
+            <div className="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
               <h3 className="text-2xl font-bold text-md mb-6">
                 Mobile-Optimized Interface
               </h3>
@@ -43,7 +46,7 @@ const Higlight = () => {
             </div>
           </div>
           <div className="w-full sm:w-1/2 mb-4 px-2 ">
-            <div className="h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl">
+            <div className="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
               <h3 className="text-2xl font-bold text-md mb-6">
                 24/7 Customer Support
               </h3>
@@ -56,7 +59,7 @@ const Higlight = () => {
             </div>
           </div>
           <div className="w-full sm:w-1/2 mb-4 px-2 ">
-            <div className="h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl">
+            <div className="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
               <h3 className="text-2xl font-bold text-md mb-6">
                 Secure Payment Processing
               </h3>
@@ -73,4 +76,4 @@ const Higlight = () => {
   );
 };
 
-export default Higlight
+export default Higlight;
